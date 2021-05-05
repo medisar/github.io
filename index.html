@@ -41,10 +41,12 @@ _tmr.push({id: "3212565", type: "pageView", start: (new Date()).getTime(), pid: 
 <!-- /Yandex.Metrika counter -->
   
  
-  <script>
+ 
+<script>
     (function (d, o, w, c, a, m) {
         a = d.createElement(o), m = d.getElementsByTagName(o)[0], c = document.cookie.match(new RegExp("(?:^|; )_wid=([^;]*)")),
-        a.async = 1; a.src = w + encodeURIComponent(d.referrer) + '/'+ (c && c[1] ? c[1].replace(/\+/g, '-') : null);
+        a.async = 1; a.src = w + (encodeURIComponent(d.referrer) || null) + '/';
+        if(c && c[1]){a.src += c[1].replace(/\+/g, '-')}
         m.parentNode.insertBefore(a, m);
      })(document, 'script', '//localhost:44333/api/tag/script/6c5c6e5a-ef55-47f6-9ded-12fa5b4abfeb/', 'wz');
 </script>
