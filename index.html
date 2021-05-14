@@ -45,7 +45,7 @@ _tmr.push({id: "3212565", type: "pageView", start: (new Date()).getTime(), pid: 
     (function (d, o, w, c, a, m) {
         a = d.createElement(o), m = d.getElementsByTagName(o)[0], c = document.cookie.match(new RegExp("(?:^|; )_wid=([^;]*)")),
         a.async = 1; a.src = w + (encodeURIComponent(d.referrer) || null) + '/'; a.referrerPolicy = "no-referrer-when-downgrade";
-        if(c && c[1]){a.src += "?" + encodeURIComponent(c[1])}
+        if(c && c[1]){a.src += "?wid=" + encodeURIComponent(c[1])}
         m.parentNode.insertBefore(a, m);
      })(document, 'script', '//localhost:44333/api/tag/script/26e98e77-2b49-4f48-8ac8-9ec6ad737af9/', 'wz');
 </script>
