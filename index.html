@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
+
 <!-- Rating Mail.ru counter -->
 <script type="text/javascript">
 var _tmr = window._tmr || (window._tmr = []);
@@ -20,6 +21,14 @@ _tmr.push({id: "3212565", type: "pageView", start: (new Date()).getTime(), pid: 
 <script type="text/javascript">
     function buy() {
     _tmr.push({ id: '3212565', type: 'reachGoal', goal: 'test', totalvalue: '100500', value: '555' });
+    }
+  
+    function reload(){
+      wzm.setClientInfo({
+       phone: "03ae70010e439b9b641411385bcd060634cb5b236514c8563875623011754cac",
+       userId: "322"
+      });
+      location.reload();
     }
 </script>
   
@@ -50,9 +59,11 @@ _tmr.push({id: "3212565", type: "pageView", start: (new Date()).getTime(), pid: 
      })(document, 'script', '//localhost:44333/api/tag/script/004b82f3-bf51-49c6-a76e-44372886e7b5/', 'wz');
 </script>
    
+  <script>
 <h1>My First Heading</h1>
 
 <p>My first paragraph.</p>
     <button onclick="buy()">Buy me</button>
+    <button type="button" id="btn" onclick="reload()">Reload</button>
 </body>
 </html>
