@@ -24,9 +24,11 @@ _tmr.push({id: "3212565", type: "pageView", start: (new Date()).getTime(), pid: 
     }
   
     function reload(){
+      var phone = document.getElementById("phone").value;
+      var userId = document.getElementById("userId").value;
       wzm.setClientInfo({
-       phone: "03ae70010e439b9b641411385bcd060634cb5b236514c8563875623011754cac",
-       userId: "322"
+       phone: phone,
+       userId: userId
       });
       location.reload();
     }
@@ -62,7 +64,11 @@ _tmr.push({id: "3212565", type: "pageView", start: (new Date()).getTime(), pid: 
 <h1>My First Heading</h1>
 
 <p>My first paragraph.</p>
-    <button onclick="buy()">Buy me</button>
-    <button type="button" id="btn" onclick="reload()">Reload</button>
+  <label for="phone">Phone</label>
+  <input type="text" name="phone" id="phone"/>
+  <label for="userId">User id</label>
+  <input type="text" name="userId" id="userId"/>
+  <button onclick="buy()">Buy me</button>
+  <button type="button" id="btn" onclick="reload()">Reload</button>
 </body>
 </html>
